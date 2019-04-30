@@ -1,0 +1,17 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	DNS.practicadaw.net. root.localhost. (
+			     29042019		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	DNS.practicadaw.net.
+150	IN	PTR	DNS.practicadaw.net.
+150	IN	PTR	correo.practicadaw.net.
+1	IN	PTR	pc1.practicadaw.net.
+2	IN	PTR	pc2.practicadaw.net.
+2	IN	PTR	ftp.practicadaw.net.

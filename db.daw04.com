@@ -1,0 +1,15 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	localhost. root.localhost. (
+			     29042019		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	DNS.daw04.com.
+DNS	IN	A	192.168.1.100
+ldap	IN	A	192.168.1.200
+pc	IN	A	192.168.1.26
